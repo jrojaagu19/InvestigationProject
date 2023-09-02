@@ -37,6 +37,7 @@ namespace InvestigationProject.API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     InstitutionalAffiliation = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Specialization = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RoleProject = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

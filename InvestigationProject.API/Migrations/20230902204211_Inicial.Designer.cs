@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InvestigationProject.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230902190121_Inicial")]
+    [Migration("20230902204211_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -80,6 +80,10 @@ namespace InvestigationProject.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RoleProject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Specialization")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

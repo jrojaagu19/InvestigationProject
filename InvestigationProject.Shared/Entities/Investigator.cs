@@ -18,7 +18,7 @@ namespace InvestigationProject.Shared.Entities
         public string InstitutionalAffiliation { get; set; } = null;
 
         [Required(ErrorMessage = "La especializacion es requerida")]
-        public string Specialization { get; } = null;
+        public string Specialization { get; set; } = null;
 
         [Required(ErrorMessage = "El rol en el proyecto es requerido")]
         public string RoleProject { get; set; } = null;
